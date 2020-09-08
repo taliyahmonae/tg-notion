@@ -119,10 +119,10 @@ var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
 if(twelveHour(today.getHours()) >12){
-    seconds+=" pm"
+    seconds+=" am"
 }
 else{
-    seconds+=" am"
+    seconds+=" pm"
 }
 hrs = today.getHours();
 if (hrs < 12)
