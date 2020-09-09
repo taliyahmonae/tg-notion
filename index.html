@@ -118,11 +118,11 @@ var today = new Date();
 var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
-if(twelveHour(today.getHours()) >12){
-    seconds+=" am"
+if(today.getHours() >12){
+    seconds+=" pm"
 }
 else{
-    seconds+=" pm"
+    seconds+=" am"
 }
 hrs = today.getHours();
 if (hrs < 12)
